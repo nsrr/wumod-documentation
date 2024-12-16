@@ -26,7 +26,16 @@ All personally identifiable information (PII) has been removed from the data fil
 
 ### Actigraphy epoch-by-epoch files
 
+[Raw epoch-by-epoch actigraphy CSV files](:files_path:/actigraphy) are available for 1,278 subjects. The filenames are structured as the subject identifier (e.g., 1001), followed by the timeframe of the collection (e.g., T1 = First trimester; GA12 = Gestational age 12 weeks; GA34 = Gestational age 34 weeks; etc.)
 
+The epoch-by-epoch files contain a file header and a raw data section that includes these columns:
+
+1. Date (shifted calendar date)
+2. Time (clock time, with AM/PM)
+3. Activity (Motionwatch counts)
+4. Light (lux)
+
+These files were downloaded directly from the Motionwatch device. Data users should be mindful of the potential for non-wear (invalid) data within the actigraphy files.
 
 ## Access and usage restrictions
 
