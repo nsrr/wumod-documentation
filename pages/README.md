@@ -6,7 +6,7 @@ Women were approached for enrollment if they had a singleton pregnancy ≤20 wee
  
 Biological samples (i.e., maternal blood, saliva, vaginal fluid, placenta, cord blood, amniotic fluid, infant buccal swab), imaging (i.e., cervical, uterine MRI, electromyometrial imaging), actigraphy, and questionnaire data (e.g., Perceived Stress Scale, Pittsburgh Sleep Quality Index, etc.) were collected during study visits. A comprehensive case report form was used to collect data from electronic medical records on the index pregnancy, previous pregnancies, maternal demographics and medical history, labor and delivery, neonatal outcomes until discharge from hospital, and maternal postpartum visits. 
 
-The NSRR WUMOD dataset includes wrist activity and light exposure from 1,260 participants from three visits (one from each trimester) between 2017 to 2020.
+The NSRR WUMOD dataset includes wrist activity and light exposure from 1,260 participants from three visits (one from each trimester) between 2017 to 2020. 
 
 ## Methods
 
@@ -20,7 +20,7 @@ Participants wore wrist actigraphy devices (Motionwatch8, CamNTech, United Kingd
 
 ## Data de-identification
 
-All personally identifiable information (PII) has been removed from the data files by the NSRR team. The calendar dates in the actigraphy files do not represent the actual dates of collection. The NSRR team shifted dates within subjects by a random offset (in multiples of 7) within ±2 months of the original data collection period.
+All personally identifiable information (PII) has been removed from the data files by the NSRR team. Calendar dates in the actigraphy epoch-by-epoch files do not represent the actual dates of collection.
 
 ## Data overview
 
@@ -28,14 +28,16 @@ All personally identifiable information (PII) has been removed from the data fil
 
 [Raw epoch-by-epoch actigraphy CSV files](:files_path:/actigraphy) are available for 1,278 subjects. The filenames are structured as the subject identifier (e.g., 1001), followed by the timeframe of the collection (e.g., T1 = First trimester; GA12 = Gestational age 12 weeks; GA34 = Gestational age 34 weeks; etc.)
 
+These files were downloaded directly from the Motionwatch device. Data users should be mindful of the potential for non-wear (invalid) data within the actigraphy files. Sleep diary data are not available. 
+
 The epoch-by-epoch files contain a file header and a raw data section that includes these columns:
 
-1. Date (shifted calendar date)
+1. Date (reset to the same day of week closest to 1/1/2000 as part of de-identification)
 2. Time (clock time, with AM/PM)
 3. Activity (Motionwatch counts)
 4. Light (lux)
 
-These files were downloaded directly from the Motionwatch device. Data users should be mindful of the potential for non-wear (invalid) data within the actigraphy files.
+The month (i.e., 1 = January, 2 = February, etc.) in which the actigraphy recording started is available in the supplemental actigraphy_month_start.csv file.
 
 ## Access and usage restrictions
 
