@@ -57,7 +57,7 @@ Users must include the following text in any Acknowledgements:
 
 ## Changelog
 
-*December 2024*
+*January 2025*
 
 - Make WUMOD dataset available for data requests
 
