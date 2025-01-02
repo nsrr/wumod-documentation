@@ -37,7 +37,7 @@ The epoch-by-epoch files contain a file header and a raw data section that inclu
 3. Activity (Motionwatch counts)
 4. Light (lux)
 
-The month (i.e., 1 = January, 2 = February, etc.) in which the actigraphy recording started is available in the supplemental actigraphy_month_start.csv file.
+The month (i.e., 1 = January, 2 = February, etc.) in which the actigraphy recording started is available in the [supplemental wumod_actigraphy_month_start.csv file](:files_path:/).
 
 ## Access and usage restrictions
 
